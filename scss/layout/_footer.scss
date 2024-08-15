@@ -1,0 +1,39 @@
+.footer {
+    padding: 22px 25px;
+    color: white;
+    background: #353535;
+
+    &__title {
+        font-family: $font-secondary;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 26.24px;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
+    &__element {
+        margin: 0.5rem 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+        font-family: $font-primary;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.75px;
+        text-align: left;
+
+    }
+
+}

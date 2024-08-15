@@ -1,0 +1,107 @@
+.location {
+    display:flex;
+    justify-content: center;
+    gap: 1rem;
+    background: $bg-color-secondary;
+    padding: 16px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin-bottom: 4px;
+
+    &__content {
+        @include btnText;
+    }
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $bg-color-secondary;
+
+    &__title {
+        @include title;
+        padding: 40px 50px 12px;
+    }
+
+    &__subtitle {
+        @include paragraph;
+    }
+}
+
+.function {
+    background: $bg-color-primary;
+    padding: 48px 20px 68px;
+
+    &__title {
+        @include sectionTitle;
+        margin-bottom: 26px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.56rem;
+    }
+
+    &__btn {
+        display: flex;
+        padding: 30px 28px;
+        gap: 32px;
+        @include btnText;
+
+        border-radius: 20px;
+        background-color: #f6f6f6;
+        box-shadow: 0px 4px 15px 0px #00000026;
+    }
+}
+
+.restaurant {
+    padding: 54px 20px;
+
+    &__title {
+        @include sectionTitle;
+        margin-bottom: 28px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
+
+.card {
+    border-radius: 15px;
+    position: relative;
+    background-color: white;
+    text-decoration: none;
+    color: inherit;
+
+    &__picture {
+        width: 100%;
+        height: 192px;
+        border-radius: 16px 16px 0 0;
+        object-fit: cover;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+    }
+
+    &__title {
+        @include paragraph;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+
+    &__subtitle {
+        font-family: $font-primary;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 19.92px;
+        text-align: left;
+    }
+}

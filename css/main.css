@@ -1,0 +1,285 @@
+/* _reset.scss */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #161616;
+}
+
+.container {
+  width: 100%;
+  min-width: 375px;
+  max-width: 425px;
+  margin: auto;
+  background-color: #EAEAEA;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  padding: 14px;
+  margin-bottom: 2px;
+}
+.header__title {
+  font-family: "Shrikhand", serif;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 43.74px;
+  text-align: center;
+}
+
+.footer {
+  padding: 22px 25px;
+  color: white;
+  background: #353535;
+}
+.footer__title {
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 26.24px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.footer__element {
+  margin: 0.5rem 0;
+}
+.footer__element:first-child {
+  margin-top: 0;
+}
+.footer__element:last-child {
+  margin-bottom: 0;
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: left;
+}
+
+.btn--primary {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  padding: 13px 18.75px;
+  margin: 40px;
+  transition: background-color 0.3s ease-out;
+}
+.btn--primary:hover {
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+}
+
+.badge {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
+  text-align: center;
+  padding: 8px 10px;
+}
+.badge--new {
+  background-color: #99e2d0;
+  color: #1b6150;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  position: absolute;
+  top: 16px;
+  right: 12px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background: #EAEAEA;
+  padding: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  margin-bottom: 4px;
+}
+.location__content {
+  font-family: "Roboto", sans-serif;
+  color: #353535;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: left;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #EAEAEA;
+}
+.hero__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  text-align: center;
+  padding: 40px 50px 12px;
+}
+.hero__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.09px;
+  text-align: center;
+}
+
+.function {
+  background: #fff;
+  padding: 48px 20px 68px;
+}
+.function__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  text-align: center;
+  text-align: left;
+  margin-bottom: 26px;
+}
+.function__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.56rem;
+}
+.function__btn {
+  display: flex;
+  padding: 30px 28px;
+  gap: 32px;
+  font-family: "Roboto", sans-serif;
+  color: #353535;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: left;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+}
+
+.restaurant {
+  padding: 54px 20px;
+}
+.restaurant__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  text-align: center;
+  text-align: left;
+  margin-bottom: 28px;
+}
+.restaurant__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.card {
+  border-radius: 15px;
+  position: relative;
+  background-color: white;
+  text-decoration: none;
+  color: inherit;
+}
+.card__picture {
+  width: 100%;
+  height: 192px;
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.card__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.09px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.card__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 19.92px;
+  text-align: left;
+}
+
+/*# sourceMappingURL=main.css.map */

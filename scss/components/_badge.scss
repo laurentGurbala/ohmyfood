@@ -1,0 +1,17 @@
+.badge {
+    font-family: $font-primary;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    text-align: center;
+    padding: 8px 10px;
+
+    &--new {
+        background-color: $color-tertiaire;
+        color: #1b6150;
+        box-shadow: 0px 2px 4px 0px #00000026;
+        position: absolute;
+        top: 16px;
+        right: 12px;
+    }
+}

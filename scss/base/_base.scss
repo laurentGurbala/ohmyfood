@@ -1,0 +1,12 @@
+body {
+    background-color: #161616;
+}
+
+.container {
+    width: 100%;
+    min-width: 375px;
+    max-width: 425px;
+    margin: auto;
+    background-color: $bg-color-secondary;
+    box-sizing: border-box;
+}
