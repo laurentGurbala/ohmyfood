@@ -2,12 +2,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: $bg-color-primary;
     box-shadow: 0px 2px 4px 0px #00000026;
     padding: 14px;
     margin-bottom: 2px;
+    position: relative;
     
     &__title {
         @include titleHeader;
     }
+
+    &__previous {
+        position: absolute;
+        left: 2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: black;
+    }
 }
+
