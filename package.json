@@ -1,0 +1,27 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "\"Projet 'Openclassrooms'",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass scss/main.scss css/main.css --style compressed",
+    "watch-css": "sass --watch scss/main.scss:css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurentGurbala/ohmyfood.git"
+  },
+  "keywords": [
+    "sass",
+    "css",
+    "styles",
+    "frontend",
+    "web-development"
+  ],
+  "author": "\"Laurent Gurbala\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurentGurbala/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/laurentGurbala/ohmyfood#readme"
+}
