@@ -2,6 +2,7 @@
 .restaurant-img {
     width: 100%;
     height: auto;
+    max-height: 275px;
     object-fit: cover;
     position: relative;
     z-index: 0;
@@ -11,7 +12,7 @@
     border-radius: 2rem 2rem 0 0;
     background-color: $bg-color-secondary;
     padding: 2rem 1rem;
-    margin-top: -4rem; 
+    margin-top: -3rem; 
     position: relative;
     z-index: 1;
 
