@@ -1,17 +1,27 @@
-.badge {
-    font-family: $font-primary;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16.41px;
-    text-align: center;
-    padding: 8px 10px;
+.new {
+    // font-family: $font-primary;
+    // font-size: 0.875rem;
+    // font-weight: 500;
+    // text-align: center;
+    // padding: 0.3rem 0.5rem;
+    position: relative;
 
-    &--new {
-        background-color: $color-tertiaire;
-        color: #1b6150;
-        box-shadow: 0px 2px 4px 0px #00000026;
+    &::before {
+        // background-color: $color-tertiaire;
+        // color: #1b6150;
+        // box-shadow: 0px 2px 4px 0px #00000026;
+        // position: absolute;
+        // top: 1rem;
+        // right: 1rem;
+        content: "Nouveau";
         position: absolute;
-        top: 16px;
-        right: 12px;
+        height: 2rem;
+        width: 5rem;
+        background-color: $color-tertiaire;
+        color: darken($color-tertiaire, 50%);
+        display: grid;
+        place-items: center;
+        right: 1rem;
+        top: 1rem;
     }
 }

@@ -1,18 +1,346 @@
-/* Error: Undefined variable.
- *    ,
- * 10 |     background-color: $bg-color-secondary;
- *    |                       ^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss\base\_base.scss 10:23  @import
- *   scss\main.scss 10:9         root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 10 \2502      background-color: $bg-color-secondary;\d\a    \2502                        ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\base\\_base.scss 10:23  @import\a   scss\\main.scss 10:9         root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: #161616;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.6rem;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  position: relative;
+  z-index: 1;
+}
+.header__title {
+  font-family: "Shrikhand", serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
+.footer {
+  padding: 1rem 1.25rem;
+  color: white;
+  background: #353535;
+}
+.footer__title {
+  font-family: "Shrikhand", serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 400;
+  text-align: left;
+  padding: 1.2rem 0;
+}
+.footer__element {
+  margin: 0.5rem 0;
+  list-style-type: none;
+}
+.footer__element:first-child {
+  margin-top: 0;
+}
+.footer__element:first-child i {
+  width: 20px;
+}
+.footer__element:last-child {
+  margin-bottom: 0;
+}
+.footer__element i {
+  margin-right: 0.5rem;
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.restaurant-img {
+  width: 100%;
+  height: auto;
+  max-height: 275px;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.menu {
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f3f3f3;
+  padding: 2rem 1rem;
+  margin-top: -3rem;
+  position: relative;
+  z-index: 1;
+}
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+}
+.menu__title {
+  font-family: "Shrikhand", serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
+.submenu__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  text-align: center;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.submenu__title::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.submenu__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submenu__item {
+  display: flex;
+  align-items: center;
+  border-radius: 0.75rem;
+  background-color: #fff;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
+  padding: 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+.submenu__item--title {
+  flex: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.submenu__item--subtitle {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+.submenu__item--price {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.btn--primary {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1.2rem 1rem;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: all 0.2s ease;
+}
+.btn--primary:hover {
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3764705882);
+}
+
+.tuto-btn {
+  display: flex;
+  padding: 1.6rem 2rem;
+  border-radius: 1.25rem;
+  background-color: #f6f6f6;
+  min-width: 335px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.new {
+  position: relative;
+}
+.new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background-color: #99e2d0;
+  color: #1b6150;
+  display: grid;
+  place-items: center;
+  right: 1rem;
+  top: 1rem;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #eaeaea;
+  color: #353535;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  padding: 1rem;
+  position: relative;
+  z-index: 0;
+}
+.location__content {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.hero {
+  padding: 2.4rem 1.625rem 3.5rem 2.125rem;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+.hero__title {
+  margin-bottom: 1.75rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.hero__subtitle {
+  margin-bottom: 1.75rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.tuto {
+  counter-reset: steps;
+  margin: 3rem 0;
+  background-color: #fff;
+  padding: 0 1.25rem;
+}
+@media (min-width: 1440px) {
+  .tuto {
+    padding: 0 11.25rem;
+  }
+}
+.tuto__title {
+  margin-bottom: 1.5rem;
+}
+.tuto__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media (min-width: 1440px) {
+  .tuto__content {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+.tuto .tuto-btn {
+  position: relative;
+}
+.tuto .tuto-btn::before {
+  counter-increment: steps;
+  content: "" counter(steps);
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+  background-color: #9356dc;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1.5rem;
+  left: -0.75rem;
+}
+.tuto i {
+  margin-right: 1.2rem;
+  color: #7E7E7E;
+}
+
+.restaurant {
+  background-color: #f3f3f3;
+  padding: 0 1.25rem;
+}
+@media (min-width: 1440px) {
+  .restaurant {
+    padding: 0 11.25rem;
+  }
+}
+.restaurant {
+  padding-bottom: 3rem;
+}
+.restaurant__title {
+  padding: 1.75rem 0;
+}
+.restaurant__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+}
+@media (min-width: 1440px) {
+  .restaurant__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 6.25rem;
+  }
+}
+
+.card {
+  border-radius: 1rem;
+  position: relative;
+  background-color: #fff;
+  text-decoration: none;
+  color: inherit;
+}
+.card__picture {
+  width: 100%;
+  height: 192px;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+/*# sourceMappingURL=main.css.map */

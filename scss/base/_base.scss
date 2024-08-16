@@ -1,12 +1,11 @@
 body {
     background-color: #161616;
+    @include btn-text;
 }
 
 .container {
     width: 100%;
-    min-width: 375px;
-    max-width: 425px;
+    max-width: 1440px;
     margin: auto;
-    background-color: $bg-color-secondary;
-    box-sizing: border-box;
+    background-color: $color-bg-primary;
 }
