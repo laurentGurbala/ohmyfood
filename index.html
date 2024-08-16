@@ -3,61 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
     <script src="https://kit.fontawesome.com/9640580a8c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
     <title>ohmyfood</title>
 </head>
 <body>
     <div class="container">
-
         <!-- En-tête -->
         <header class="header">
             <h1 class="header__title">ohmyfood</h1>
         </header>
-        
+
         <!-- Localisation -->
         <section class="location">
             <i class="fa-solid fa-location-dot"></i>
             <p class="location__content">Paris, Belleville</p>
         </section>
-        
-        <!-- Contenu principal -->
-        <main>
+
+        <main">
             <!-- Reserver menu -->
             <section class="hero">
                 <h2 class="hero__title">Réservez le menu qui vous convient</h2>
                 <p class="hero__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
                 <a href="#restaurant" class="btn--primary">Explorer nos restaurants</a>
             </section>
-            
+
             <!-- Fonctionnement -->
-            <section class="function">
-                <h2 class="function__title">Fonctionnement</h2>
-                <div class="function__content">
-                    <div class="function__btn">
+            <section class="tuto">
+                <h2 class="tuto__title">Fonctionnement</h2>
+                <div class="tuto__content">
+                    <div class="tuto-btn">
                         <i class="fa-solid fa-mobile-screen-button"></i>
                         <p>choisissez un restaurant</p>
                     </div>
-                    <div class="function__btn">
+                    <div class="tuto-btn">
                         <i class="fa-solid fa-bars"></i></i>
                         <p>Composez votre menu</p>
                     </div>
-                    <div class="function__btn">
+                    <div class="tuto-btn">
                         <i class="fa-solid fa-store"></i>
                         <p>Dégustez au restaurant</p>
                     </div>
                 </div>
             </section>
-            
+
             <!-- Restaurants -->
             <section id="restaurant" class="restaurant">
                 <h2 class="restaurant__title">Restaurants</h2>
                 <div class="restaurant__grid">
 
                     <!-- Lien vers la palette du gout -->
-                    <a href="la_palette_du_gout.html" class="card">
-                        <img class="card__picture" src="../assets/img/restaurants/la_palette_du_gout.jpg" alt="photo du restaurant la palette du goût">
-                        <span class="badge badge--new">Nouveau</span>
+                    <a href="./pages/la_palette_du_gout.html" class="card new">
+                        <img class="card__picture" src="assets/img/restaurants/la_palette_du_gout.jpg" alt="photo du restaurant la palette du goût">
                         <footer class="card__footer">
                             <div>
                                 <h3 class="card__title">La palette du goût</h3>
@@ -71,9 +68,8 @@
                     </a>
                     
                     <!-- Lien vers la note enchantée -->
-                    <a href="la_note_enchantee.html" class="card">
-                        <img class="card__picture" src="../assets/img/restaurants/la_note_enchantee.jpg" alt="photo du restaurant la note enchantée">
-                        <span class="badge badge--new">Nouveau</span>
+                    <a href="./pages/la_note_enchantee.html" class="card new">
+                        <img class="card__picture" src="assets/img/restaurants/la_note_enchantee.jpg" alt="photo du restaurant la note enchantée">
                         <footer class="card__footer">
                             <div>
                                 <h3 class="card__title">La note enchantée</h3>
@@ -87,8 +83,8 @@
                     </a>
 
                     <!-- Lien vers le restaurant  À la française-->
-                    <a href="a_la_francaise.html" class="card">
-                        <img class="card__picture" src="../assets/img/restaurants/a_la_francaise.jpg" alt="photo du restaurant à la française">
+                    <a href="./pages/a_la_francaise.html" class="card">
+                        <img class="card__picture" src="assets/img/restaurants/a_la_francaise.jpg" alt="photo du restaurant à la française">
                         <footer class="card__footer">
                             <div>
                                 <h3 class="card__title">À la française</h3>
@@ -102,7 +98,7 @@
                     </a>
 
                     <!-- Lien vers le restaurant  Le délice des sens -->
-                    <a href="le_delice_des_sens.html" class="card">
+                    <a href="./pages/le_delice_des_sens.html" class="card">
                         <img class="card__picture" src="../assets/img/restaurants/le_delice_des_sens.jpg" alt="photo du restaurant le délice des sens">
                         <footer class="card__footer">
                             <div>
@@ -117,9 +113,8 @@
                     </a>
                 </div>
             </section>
-        </main>
-        
-        <!-- Pied de page -->
+
+            <!-- Pied de page -->
         <footer class="footer">
             <p class="footer__title">ohmygood</p>
             <ul>
@@ -139,6 +134,8 @@
                 </li>
             </ul>
         </footer>
+        </main>
     </div>
-    </body>
-    </html>
+    
+</body>
+</html>

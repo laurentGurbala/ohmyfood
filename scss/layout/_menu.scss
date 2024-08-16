@@ -10,7 +10,7 @@
 
 .menu {
     border-radius: 2rem 2rem 0 0;
-    background-color: $bg-color-secondary;
+    background-color: $color-bg-secondary;
     padding: 2rem 1rem;
     margin-top: -3rem; 
     position: relative;
@@ -25,14 +25,14 @@
     }
 
     &__title {
-        @include titleHeader;
+        @include header-title;
     }
 }
 
 .submenu {
 
     &__title {
-        @include paragraph;
+        @include paragraph-text;
         text-align: left;
         text-transform: uppercase;
         padding-bottom: 0.5rem;
@@ -61,7 +61,7 @@
     display: flex;
     align-items: center;
     border-radius: 0.75rem;
-    background-color: $bg-color-primary;
+    background-color: $color-bg-primary;
     box-shadow: 0px 4.01px 15.04px 0px #0000001A;
     padding: 1rem;
     margin: 1rem 0;
@@ -81,7 +81,7 @@
     }
 
     &--price {
-        @include title;
+        @include section-title;
         font-size: 1rem;
     }
 }
