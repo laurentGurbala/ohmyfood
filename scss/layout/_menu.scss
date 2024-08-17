@@ -23,6 +23,7 @@
         padding-right: 1rem;
         margin-bottom: 2rem;
         
+        @include heart-hover;
     }
 
     &__title {

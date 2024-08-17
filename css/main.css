@@ -122,6 +122,24 @@ body {
   align-items: baseline;
   padding-right: 1rem;
   margin-bottom: 2rem;
+  position: relative;
+}
+.menu__header i {
+  position: absolute;
+  font-size: 2rem;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu__header .fa-solid {
+  color: transparent;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-clip: text;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+.menu__header .fa-solid:hover {
+  opacity: 1;
 }
 .menu__title {
   font-family: "Shrikhand", serif;
