@@ -7,7 +7,7 @@
     border: none;
     border-radius: 1.5rem;
     padding: 1.2rem 1rem;
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    @include base-gradient;
     @include box-shadow;
     transition: all 0.2s ease;
 

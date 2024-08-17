@@ -42,3 +42,7 @@
         padding: 0 11.25rem;
     }
 }
+
+@mixin base-gradient {
+    background: linear-gradient(193.33deg, $color-primary -11.44%, $color-secondary 123.93%);
+}
