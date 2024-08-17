@@ -10,4 +10,12 @@
     &__title {
         @include header-title;
     }
+
+    &__previous {
+        position: absolute;
+        left: 2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: black;
+    }
 }

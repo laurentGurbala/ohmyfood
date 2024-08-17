@@ -39,6 +39,13 @@ body {
   font-style: italic;
   text-align: center;
 }
+.header__previous {
+  position: absolute;
+  left: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
 
 .footer {
   padding: 1rem 1.25rem;
