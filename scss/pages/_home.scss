@@ -118,27 +118,7 @@
     
         &__footer {
             padding: 1rem 1.2rem;
-            position: relative;
-        
-            & i {
-                position: absolute;
-                font-size: 2rem;
-                right: 1.2rem;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-
-            & .fa-solid {
-                color: transparent;
-                @include base-gradient;
-                background-clip: text;
-                opacity: 0;
-                transition: opacity 0.2s ease-out;
-
-                &:hover {
-                    opacity: 1;
-                }
-            }
+            @include heart-hover;
         }
     }
 }
