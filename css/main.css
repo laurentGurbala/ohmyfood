@@ -99,11 +99,12 @@ body {
   margin-bottom: 0.2rem;
 }
 
-.restaurant-img {
+.banner img {
+  display: block;
   width: 100%;
-  height: auto;
-  max-height: 275px;
+  height: 70vh;
   object-fit: cover;
+  object-position: center bottom;
   position: relative;
   z-index: 0;
 }
@@ -115,6 +116,12 @@ body {
   margin-top: -3rem;
   position: relative;
   z-index: 1;
+}
+@media (min-width: 1440px) {
+  .menu {
+    width: 1055px;
+    margin: -3rem auto 0;
+  }
 }
 .menu__header {
   display: flex;
