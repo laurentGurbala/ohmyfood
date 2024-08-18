@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+@keyframes check-anim {
+  from {
+    transform: rotate(-270deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 *,
 *::before,
 *::after {
@@ -156,6 +164,61 @@ body {
   text-align: center;
 }
 
+.menu-item {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
+  margin-bottom: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu-item__container {
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+}
+.menu-item__container > div {
+  overflow: hidden;
+}
+.menu-item__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-item__subtitle {
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0 0 0.5rem 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-item__price {
+  margin-left: auto;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+}
+.menu-item__check {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-size: 2rem;
+  color: white;
+  background: #99e2d0;
+  width: 4.2rem;
+  height: 4.2rem;
+  margin-right: -4.2rem;
+  transition: margin-right 0.2s ease-in-out;
+}
+.menu-item:hover .menu-item__check {
+  margin-right: 0;
+}
+.menu-item:hover i {
+  animation: check-anim 0.4s;
+}
+
 .submenu__title {
   font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
@@ -180,35 +243,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.submenu__item {
-  display: flex;
-  align-items: center;
-  border-radius: 0.75rem;
-  background-color: #fff;
-  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
-  padding: 1rem;
-  margin: 1rem 0;
-  cursor: pointer;
-}
-.submenu__item--title {
-  flex: 1;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-}
-.submenu__item--subtitle {
-  font-weight: 300;
-  font-size: 1rem;
-  margin-top: 0.2rem;
-}
-.submenu__item--price {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-align: center;
-  font-size: 1rem;
 }
 
 .btn--primary {
