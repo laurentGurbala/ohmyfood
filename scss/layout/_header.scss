@@ -17,5 +17,10 @@
         font-size: 1.5rem;
         font-weight: bold;
         color: black;
+        transition: transform 0.2s ease-out;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }
