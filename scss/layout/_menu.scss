@@ -44,6 +44,9 @@
     margin-bottom: 1.5rem;
     white-space: nowrap;
     overflow: hidden;
+    
+    // Animation des items menu
+    animation: appear 0.5s both;
 
     &__container {
         display: flex;
@@ -101,6 +104,22 @@
             animation: check-anim 0.4s; 
         }
     }
+}
+
+.delay-1 {
+    animation-delay: 0.1s;
+}
+
+.delay-2 {
+    animation-delay: 0.2s; 
+}
+
+.delay-3 {
+    animation-delay: 0.3s; 
+}
+
+.delay-4 {
+    animation-delay: 0.4s; 
 }
 
 .submenu {
