@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="https://kit.fontawesome.com/9640580a8c.js" crossorigin="anonymous"></script>
     <title>ohmyfood | À la française</title>
 </head>
+
 <body>
     <div class="container">
         <!-- En-tête -->
@@ -14,10 +16,13 @@
             <a class="header__previous" href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
             <h1 class="header__title">ohmyfood</h1>
         </header>
-        
+
         <!-- Banner image -->
-        <img class="restaurant-img" src="../assets/img/restaurants/a_la_francaise.jpg" alt="plat d'un menu du restaurant la palette du gout">
-        
+        <div class="banner">
+            <img src="../assets/img/restaurants/a_la_francaise.jpg"
+                alt="plat d'un menu du restaurant la palette du gout">
+        </div>
+
         <!-- Contenu principal -->
         <main class="menu">
             <!-- Header du menu -->
@@ -32,87 +37,123 @@
             <!-- Entrées -->
             <section class="submenu">
                 <h3 class="submenu__title">Entrées</h3>
+
                 <!-- Entrée n°1 -->
-                <div class="submenu__item">
-                    <div class="submenu__item--title">
-                        <p><strong>Tartare de poulpe acidulé</strong></p>
-                        <p class="submenu__item--subtitle">Aux zestes d'orange</p>
+                <div class="menu-item">
+                    <div class="menu-item__container">
+                        <div>
+                            <p class="menu-item__title"><strong>Tartare de poulpe acidulé</strong></p>
+                            <p class="menu-item__subtitle">Aux zestes d'orange</p>
+                        </div>
+                        <p class="menu-item__price">25€</p>
+                        <div class="menu-item__check"><i class="fa-solid fa-circle-check"></i></div>
                     </div>
-                    <p class="submenu__item--price">25€</p>
                 </div>
+
                 <!-- Entrée n°2 -->
-                <div class="submenu__item">
-                    <div class="submenu__item--title">
-                        <p><strong>Velouté de légumes d'antan </strong></p>
-                        <p class="submenu__item--subtitle">Carotte, panais, topinambour</p>
+                <div class="menu-item">
+                    <div class="menu-item__container">
+                        <div>
+                            <p class="menu-item__title"><strong>Velouté de légumes d'antan </strong></p>
+                            <p class="menu-item__subtitle">Carotte, panais, topinambour</p>
+                        </div>
+                        <p class="menu-item__price">35€</p>
+                        <div class="menu-item__check"><i class="fa-solid fa-circle-check"></i></div>
                     </div>
-                    <p class="submenu__item--price">35€</p>
                 </div>
+
                 <!-- Entrée n°3 -->
-                <div class="submenu__item">
-                    <div class="submenu__item--title">
-                        <p><strong>Soupe à l'oignon</strong></p>
-                        <p class="submenu__item--subtitle">Revisité</p>
+                <div class="menu-item">
+                    <div class="menu-item__container">
+                        <div>
+                            <p class="menu-item__title"><strong>Soupe à l'oignon</strong></p>
+                            <p class="menu-item__subtitle">Revisité</p>
+                        </div>
+                        <p class="menu-item__price">20€</p>
+                        <div class="menu-item__check"><i class="fa-solid fa-circle-check"></i></div>
                     </div>
-                    <p class="submenu__item--price">20€</p>
                 </div>
             </section>
 
             <!-- Plats -->
             <section class="submenu">
                 <h3 class="submenu__title">Plats</h3>
+                
                 <!-- Plat n°1 -->
-                <div class="submenu__item">
-                    <div class="submenu__item--title">
-                        <p><strong>Coquilles Saint-Jacques</strong></p>
-                        <p class="submenu__item--subtitle">Accompagnées d'une purée de panais</p>
+                <div class="menu-item">
+                    <div class="menu-item__container">
+                        <div>
+                            <p class="menu-item__title"><strong>Coquilles Saint-Jacques</strong></p>
+                            <p class="menu-item__subtitle">Accompagnées d'une purée de panais</p>
+                        </div>
+                        <p class="menu-item__price">40€</p>
+                        <div class="menu-item__check"><i class="fa-solid fa-circle-check"></i></div>
                     </div>
-                    <p class="submenu__item--price">40€</p>
                 </div>
+
                 <!-- Plat n°2 -->
-                <div class="submenu__item">
-                    <div class="submenu__item--title">
-                        <p><strong>Magret de canard </strong></p>
-                        <p class="submenu__item--subtitle">Et parmentier de pommes de terre</p>
+                <div class="menu-item">
+                    <div class="menu-item__container">
+                        <div>
+                            <p class="menu-item__title"><strong>Magret de canard </strong></p>
+                            <p class="menu-item__subtitle">Et parmentier de pommes de terre</p>
+                        </div>
+                        <p class="menu-item__price">35€</p>
+                        <div class="menu-item__check"><i class="fa-solid fa-circle-check"></i></div>
                     </div>
-                    <p class="submenu__item--price">35€</p>
                 </div>
+
                 <!-- Plat n°3 -->
-                <div class="submenu__item">
-                    <div class="submenu__item--title">
-                        <p><strong>Pigeonneau d’Ille-et-Vilaine</strong></p>
-                        <p class="submenu__item--subtitle">Sur son lit de gnocchis aux légumes</p>
+                <div class="menu-item">
+                    <div class="menu-item__container">
+                        <div>
+                            <p class="menu-item__title"><strong>Pigeonneau d’Ille-et-Vilaine</strong></p>
+                            <p class="menu-item__subtitle">Sur son lit de gnocchis aux légumes</p>
+                        </div>
+                        <p class="menu-item__price">44€</p>
+                        <div class="menu-item__check"><i class="fa-solid fa-circle-check"></i></div>
                     </div>
-                    <p class="submenu__item--price">44€</p>
                 </div>
             </section>
 
             <!-- Desserts -->
             <section class="submenu">
                 <h3 class="submenu__title">Desserts</h3>
+
                 <!-- Dessert n°1 -->
-                <div class="submenu__item">
-                    <div class="submenu__item--title">
-                        <p><strong>Pétales de violettes glacés</strong></p>
-                        <p class="submenu__item--subtitle">Et purée de noisettes</p>
+                <div class="menu-item">
+                    <div class="menu-item__container">
+                        <div>
+                            <p  class="menu-item__title"><strong>Pétales de violettes glacés</strong></p>
+                            <p class="menu-item__subtitle">Et purée de noisettes</p>
+                        </div>
+                        <p class="menu-item__price">18€</p>
+                        <div class="menu-item__check"><i class="fa-solid fa-circle-check"></i></div>
                     </div>
-                    <p class="submenu__item--price">18€</p>
                 </div>
+
                 <!-- Dessert n°2 -->
-                <div class="submenu__item">
-                    <div class="submenu__item--title">
-                        <p><strong>Fondant au chocolat</strong></p>
-                        <p class="submenu__item--subtitle">Revisité</p>
+                <div class="menu-item">
+                    <div class="menu-item__container">
+                        <div>
+                            <p  class="menu-item__title"><strong>Fondant au chocolat</strong></p>
+                            <p class="menu-item__subtitle">Revisité</p>
+                        </div>
+                        <p class="menu-item__price">22€</p>
+                        <div class="menu-item__check"><i class="fa-solid fa-circle-check"></i></div>
                     </div>
-                    <p class="submenu__item--price">22€</p>
                 </div>
+
                 <!-- Dessert n°3 -->
-                <div class="submenu__item">
-                    <div class="submenu__item--title">
-                        <p><strong>Millefeuille croustillant</strong></p>
-                        <p class="submenu__item--subtitle">Myrtilles et pâte d’amande</p>
+                <div class="menu-item">
+                    <div class="menu-item__container">
+                        <div>
+                            <p  class="menu-item__title"><strong>Millefeuille croustillant</strong></p>
+                            <p class="menu-item__subtitle">Myrtilles et pâte d’amande</p>
+                        </div>
+                        <p class="menu-item__price">23€</p>
+                        <div class="menu-item__check"><i class="fa-solid fa-circle-check"></i></div>
                     </div>
-                    <p class="submenu__item--price">23€</p>
                 </div>
             </section>
 
@@ -125,17 +166,17 @@
         <!-- Pied de page -->
         <footer class="footer">
             <p class="footer__title">ohmygood</p>
-                <div class="footer__block footer__block--order">
-                    <div>
-                        <i class="fa-solid fa-utensils"></i>
-                        <p class="footer__link">Proposer un restaurant</p>
-                    </div>
-                    <div>
-
-                        <i class="fa-solid fa-handshake-angle"></i>
-                        <p class="footer__link">Devenir partenaire</p>
-                    </div>
+            <div class="footer__block footer__block--order">
+                <div>
+                    <i class="fa-solid fa-utensils"></i>
+                    <p class="footer__link">Proposer un restaurant</p>
                 </div>
+                <div>
+
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <p class="footer__link">Devenir partenaire</p>
+                </div>
+            </div>
             <div class="footer__block">
                 <p class="footer__link">Mentions légales</p>
                 <p><a class="footer__link" href="mailto:ohmyfood@test.fr" class="footer__element">Contact</a></p>
@@ -144,4 +185,5 @@
     </div>
 
 </body>
+
 </html>
