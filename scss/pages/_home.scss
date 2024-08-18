@@ -1,3 +1,23 @@
+.loader {
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+
+    // Animation
+    animation: loader 0.2s 1.5s both;
+
+    // Positionne le spinner au milieu
+    display: grid;
+    place-items: center;
+
+    & i {
+        color: $color-primary;
+        animation: spin 1s infinite linear;
+    }
+}
+
 .location {
     display: flex;
     justify-content: center;
