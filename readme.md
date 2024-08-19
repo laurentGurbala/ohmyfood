@@ -13,3 +13,7 @@ Troisième projet du parcours "Développeur web" chez OpenClassroom.
 - html
 - css
 - sass
+
+## Tester le projet
+
+https://laurentgurbala.github.io/ohmyfood/
